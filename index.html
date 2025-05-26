@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kohvik Leiton</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        [lang="ru"] {
+            font-family: 'PT Sans', sans-serif;
+            color: #3E3E3E;
+        }
+        [lang="et"] {
+            font-family: 'Montserrat', sans-serif;
+            color: #3E3E3E;
+        }
+    </style>
+</head>
+<body>
+    <!-- ======= ЯЗЫКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ ======= -->
+    <div class="lang-switch">
+        <button onclick="switchLang('et')">EST</button>
+        <button onclick="switchLang('ru')">RUS</button>
+    </div>
+
+    <!-- ======= ГЛАВНАЯ (ЭСТОНСКИЙ) ======= -->
+    <section class="section" lang="et">
+        <h1 style="color:#6B4C3B;">Tere tulemast kohvikusse Leiton!</h1>
+        <p>Pakume koduseid toite ja hubast atmosfääri Tallinnas.</p>
+    </section>
+
+    <!-- ======= ГЛАВНАЯ (РУССКИЙ) ======= -->
+    <section class="section" lang="ru">
+        <h1 style="color:#6B4C3B;">Добро пожаловать в кафе Leiton!</h1>
+        <p>Мы предлагаем домашнюю кухню и уютную атмосферу в Таллинне.</p>
+    </section>
+
+    <!-- ======= МЕНЮ (ЭСТОНСКИЙ) ======= -->
+    <section class="section" lang="et">
+        <h2 style="color:#6B4C3B;">Menüü</h2>
+        <ul>
+            <li>Hommikusöök</li>
+            <li>Supp</li>
+            <li>Praad</li>
+            <li>Magustoit</li>
+            <li>Kohv ja tee</li>
+        </ul>
+    </section>
+
+    <!-- ======= МЕНЮ (РУССКИЙ) ======= -->
+    <section class="section" lang="ru">
+        <h2 style="color:#6B4C3B;">Меню</h2>
+        <ul>
+            <li>Завтрак</li>
+            <li>Суп</li>
+            <li>Горячее</li>
+            <li>Десерт</li>
+            <li>Кофе и чай</li>
+        </ul>
+    </section>
+
+    <!-- ======= ГАЛЕРЕЯ ======= -->
+    <section class="section gallery">
+        <h2 style="color:#6B4C3B;">Галерея</h2>
+        <div class="carousel">
+            <img src="placeholder.jpg" alt="Фото кафе" />
+            <img src="placeholder.jpg" alt="Фото блюда" />
+        </div>
+    </section>
+
+    <!-- ======= КОНТАКТЫ ======= -->
+    <section class="section" lang="et">
+        <h2 style="color:#6B4C3B;">Kontakt</h2>
+        <p>Aadress: Sõle 31, Tallinn</p>
+        <p>Avatud: E–R 9:00–17:00</p>
+        <p>Telefon: +372 5555 5555</p>
+    </section>
+
+    <section class="section" lang="ru">
+        <h2 style="color:#6B4C3B;">Контакты</h2>
+        <p>Адрес: Sõle 31, Таллинн</p>
+        <p>Открыто: Пн–Пт 9:00–17:00</p>
+        <p>Телефон: +372 5555 5555</p>
+    </section>
+
+    <!-- ======= СОЦСЕТИ ======= -->
+    <footer>
+        <a href="https://www.instagram.com/kohvikleiton" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/share/1BT9iPECfs/" target="_blank">Facebook</a>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('[lang]').forEach(el => {
+                el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
+            });
+        }
+        switchLang('ru'); // Язык по умолчанию
+    </script>
+</body>
+</html>
