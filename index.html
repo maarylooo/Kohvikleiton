@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kohvik Söör Leiton</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo" lang="et">Kohvik Söör Leiton</div>
+  <div class="logo" lang="ru" style="display:none;">Кафе Söör Leiton</div>
+
+  <nav class="nav-wrapper">
+    <div class="menu" lang="et">
+      <a href="#home">Avaleht</a>
+      <a href="#about">Meist</a>
+      <a href="#menu">Menüü</a>
+      <a href="#contacts">Kontakt</a>
+      <a href="#gallery">Galerii</a>
+    </div>
+    <div class="menu" lang="ru" style="display:none;">
+      <a href="#home">Главная</a>
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#contacts">Контакты</a>
+      <a href="#gallery">Галерея</a>
+    </div>
+    <div class="lang-switch">
+      <button onclick="setLang('et')">🇪🇪</button>
+      <button onclick="setLang('ru')">🇷🇺</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="home">
+    <div lang="et">
+      <h1>Tere tulemast kohvikusse Söör Leiton!</h1>
+      <p>Õdus kohvik Ahtmes – parim koht algavaks päevaks või rahulikuks lõunaks.</p>
+    </div>
+    <div lang="ru" style="display:none;">
+      <h1>Добро пожаловать в кафе Söör Leiton!</h1>
+      <p>Уютное кафе в Ахтме — лучшее место для начала дня и спокойного обеда.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div lang="et">
+      <h2>Ettevõttest</h2>
+      <p><strong>KÜLASTAJAD ARMASTAVAD MEIE TOITU</strong><br>Kes on käinud, see teab ......</p>
+      <p>Kohvik söör Leiton on õdus ja hea söögikoht ning parim kohvik Kohtla-Järve linna Ahtme linnaosas...</p>
+    </div>
+    <div lang="ru" style="display:none;">
+      <h2>О нас</h2>
+      <p><strong>ПОСЕТИТЕЛЯМ НРАВИТСЯ НАША КУХНЯ</strong><br>Кто побывал, тот знает……</p>
+      <p>Кафе Söör Leiton — уютное кафе и лучшее место в Ахтмеской части города Кохтла-Ярве...</p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div lang="et">
+      <h2>Menüü</h2>
+      <p><strong>ELUL ON MAITSET</strong><br>Hommiku- ja lõunasöögimenüü, desserdid, banketid.</p>
+      <img src="img/placeholder.jpg" class="gallery-img" />
+    </div>
+    <div lang="ru" style="display:none;">
+      <h2>Меню</h2>
+      <p><strong>У ЖИЗНИ ШИРОКИЙ СПЕКТР ВКУСОВ</strong><br>Завтраки, обеды, десерты и банкеты.</p>
+      <img src="img/placeholder.jpg" class="gallery-img" />
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div lang="et">
+      <h2>Kontakt</h2>
+      <p>Oleme avatud:<br>tööpäevadel 07:00 – 18:00<br>nädalavahetustel 10:00 – 16:00</p>
+      <p>Telefon: +372 54 77 0849<br>E-post: toitlustus@kjvhk.ee</p>
+    </div>
+    <div lang="ru" style="display:none;">
+      <h2>Контакты</h2>
+      <p>Мы открыты:<br>Пн–Пт 07:00 – 18:00<br>Сб–Вс 10:00 – 16:00</p>
+      <p>Телефон: +372 54 77 0849<br>Email: toitlustus@kjvhk.ee</p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div lang="et">
+      <h2>Galerii</h2>
+      <img src="img/placeholder.jpg" class="gallery-img" />
+    </div>
+    <div lang="ru" style="display:none;">
+      <h2>Галерея</h2>
+      <img src="img/placeholder.jpg" class="gallery-img" />
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Söör Leiton | <a href="https://www.instagram.com/kohvikleiton" target="_blank">Instagram</a> | <a href="https://www.facebook.com/share/1BT9iPECfs/" target="_blank">Facebook</a></p>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[lang]').forEach(el => {
+    el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
+  });
+}
+setLang('ru');
+</script>
+
+</body>
+</html>
