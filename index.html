@@ -1,103 +1,211 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kohvik Leiton</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Montserrat&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        [lang="ru"] {
-            font-family: 'PT Sans', sans-serif;
-            color: #3E3E3E;
-        }
-        [lang="et"] {
-            font-family: 'Montserrat', sans-serif;
-            color: #3E3E3E;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kohvik Leiton</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Montserrat&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background: #FAF3E0;
+      color: #3E3E3E;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4A6B4F;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-weight: 600;
+      margin: 0 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    nav button.active {
+      border-bottom: 2px solid #FAF3E0;
+    }
+    .lang-switch button {
+      background: #39523a;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      margin-left: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .lang-switch button.active {
+      background: #FAF3E0;
+      color: #4A6B4F;
+    }
+    section {
+      display: none;
+      padding: 20px;
+    }
+    section.active {
+      display: block;
+    }
+    h1, h2 {
+      color: #6B4C3B;
+      font-family: 'PT Sans', sans-serif;
+    }
+    [lang="ru"] {
+      font-family: 'PT Sans', sans-serif;
+    }
+    [lang="et"] {
+      font-family: 'Montserrat', sans-serif;
+    }
+    footer {
+      background: #E3D6C8;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+    footer a {
+      color: #4A6B4F;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <!-- ======= ЯЗЫКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ ======= -->
-    <div class="lang-switch">
-        <button onclick="switchLang('et')">EST</button>
-        <button onclick="switchLang('ru')">RUS</button>
-    </div>
 
-    <!-- ======= ГЛАВНАЯ (ЭСТОНСКИЙ) ======= -->
-    <section class="section" lang="et">
-        <h1 style="color:#6B4C3B;">Tere tulemast kohvikusse Leiton!</h1>
-        <p>Pakume koduseid toite ja hubast atmosfääri Tallinnas.</p>
-    </section>
+<header>
+  <nav>
+    <button class="tab-btn active" data-tab="home">Главная</button>
+    <button class="tab-btn" data-tab="menu">Меню</button>
+    <button class="tab-btn" data-tab="gallery">Галерея</button>
+    <button class="tab-btn" data-tab="contacts">Контакты</button>
+  </nav>
+  <div class="lang-switch">
+    <button class="lang-btn" data-lang="et">EST</button>
+    <button class="lang-btn active" data-lang="ru">RUS</button>
+  </div>
+</header>
 
-    <!-- ======= ГЛАВНАЯ (РУССКИЙ) ======= -->
-    <section class="section" lang="ru">
-        <h1 style="color:#6B4C3B;">Добро пожаловать в кафе Leiton!</h1>
-        <p>Мы предлагаем домашнюю кухню и уютную атмосферу в Таллинне.</p>
-    </section>
+<!-- Главная -->
+<section id="home" class="tab-content active">
+  <div lang="et" style="display:none;">
+    <h1>Tere tulemast kohvikusse Leiton!</h1>
+    <p>Pakume koduseid toite ja hubast atmosfääri Tallinnas.</p>
+  </div>
+  <div lang="ru">
+    <h1>Добро пожаловать в кафе Leiton!</h1>
+    <p>Мы предлагаем домашнюю кухню и уютную атмосферу в Таллинне.</p>
+  </div>
+</section>
 
-    <!-- ======= МЕНЮ (ЭСТОНСКИЙ) ======= -->
-    <section class="section" lang="et">
-        <h2 style="color:#6B4C3B;">Menüü</h2>
-        <ul>
-            <li>Hommikusöök</li>
-            <li>Supp</li>
-            <li>Praad</li>
-            <li>Magustoit</li>
-            <li>Kohv ja tee</li>
-        </ul>
-    </section>
+<!-- Меню -->
+<section id="menu" class="tab-content">
+  <div lang="et" style="display:none;">
+    <h2>Menüü</h2>
+    <ul>
+      <li>Hommikusöök</li>
+      <li>Supp</li>
+      <li>Praad</li>
+      <li>Magustoit</li>
+      <li>Kohv ja tee</li>
+    </ul>
+  </div>
+  <div lang="ru" style="display:block;">
+    <h2>Меню</h2>
+    <ul>
+      <li>Завтрак</li>
+      <li>Суп</li>
+      <li>Горячее</li>
+      <li>Десерт</li>
+      <li>Кофе и чай</li>
+    </ul>
+  </div>
+</section>
 
-    <!-- ======= МЕНЮ (РУССКИЙ) ======= -->
-    <section class="section" lang="ru">
-        <h2 style="color:#6B4C3B;">Меню</h2>
-        <ul>
-            <li>Завтрак</li>
-            <li>Суп</li>
-            <li>Горячее</li>
-            <li>Десерт</li>
-            <li>Кофе и чай</li>
-        </ul>
-    </section>
+<!-- Галерея -->
+<section id="gallery" class="tab-content">
+  <div lang="et" style="display:none;">
+    <h2>Galerii</h2>
+    <p>Fotod peagi tulevad.</p>
+  </div>
+  <div lang="ru" style="display:block;">
+    <h2>Галерея</h2>
+    <p>Фотографии скоро появятся.</p>
+  </div>
+</section>
 
-    <!-- ======= ГАЛЕРЕЯ ======= -->
-    <section class="section gallery">
-        <h2 style="color:#6B4C3B;">Галерея</h2>
-        <div class="carousel">
-            <img src="placeholder.jpg" alt="Фото кафе" />
-            <img src="placeholder.jpg" alt="Фото блюда" />
-        </div>
-    </section>
+<!-- Контакты -->
+<section id="contacts" class="tab-content">
+  <div lang="et" style="display:none;">
+    <h2>Kontakt</h2>
+    <p>Aadress: Sõle 31, Tallinn</p>
+    <p>Avatud: E–R 9:00–17:00</p>
+    <p>Telefon: +372 5555 5555</p>
+    <p>Jälgi meid:</p>
+    <p><a href="https://www.instagram.com/kohvikleiton" target="_blank">Instagram</a> | <a href="https://www.facebook.com/share/1BT9iPECfs/" target="_blank">Facebook</a></p>
+  </div>
+  <div lang="ru" style="display:block;">
+    <h2>Контакты</h2>
+    <p>Адрес: Sõle 31, Таллинн</p>
+    <p>Открыто: Пн–Пт 9:00–17:00</p>
+    <p>Телефон: +372 5555 5555</p>
+    <p>Следите за нами:</p>
+    <p><a href="https://www.instagram.com/kohvikleiton" target="_blank">Instagram</a> | <a href="https://www.facebook.com/share/1BT9iPECfs/" target="_blank">Facebook</a></p>
+  </div>
+</section>
 
-    <!-- ======= КОНТАКТЫ ======= -->
-    <section class="section" lang="et">
-        <h2 style="color:#6B4C3B;">Kontakt</h2>
-        <p>Aadress: Sõle 31, Tallinn</p>
-        <p>Avatud: E–R 9:00–17:00</p>
-        <p>Telefon: +372 5555 5555</p>
-    </section>
+<footer>
+  &copy; 2025 Kohvik Leiton
+</footer>
 
-    <section class="section" lang="ru">
-        <h2 style="color:#6B4C3B;">Контакты</h2>
-        <p>Адрес: Sõle 31, Таллинн</p>
-        <p>Открыто: Пн–Пт 9:00–17:00</p>
-        <p>Телефон: +372 5555 5555</p>
-    </section>
+<script>
+  // Переключение вкладок
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
 
-    <!-- ======= СОЦСЕТИ ======= -->
-    <footer>
-        <a href="https://www.instagram.com/kohvikleiton" target="_blank">Instagram</a> |
-        <a href="https://www.facebook.com/share/1BT9iPECfs/" target="_blank">Facebook</a>
-    </footer>
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Активная вкладка
+      tabButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
 
-    <script>
-        function switchLang(lang) {
-            document.querySelectorAll('[lang]').forEach(el => {
-                el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
-            });
-        }
-        switchLang('ru'); // Язык по умолчанию
-    </script>
+      // Показать содержимое
+      const tab = btn.getAttribute('data-tab');
+      tabContents.forEach(section => {
+        section.classList.toggle('active', section.id === tab);
+      });
+    });
+  });
+
+  // Переключение языка
+  const langButtons = document.querySelectorAll('.lang-btn');
+  const allLangDivs = document.querySelectorAll('[lang]');
+
+  function setLanguage(lang) {
+    langButtons.forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-lang') === lang));
+    allLangDivs.forEach(div => {
+      div.style.display = (div.getAttribute('lang') === lang) ? 'block' : 'none';
+    });
+  }
+
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      setLanguage(btn.getAttribute('data-lang'));
+    });
+  });
+
+  // Установим язык по умолчанию русский
+  setLanguage('ru');
+</script>
+
 </body>
 </html>
