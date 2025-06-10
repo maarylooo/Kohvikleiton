@@ -1,13 +1,15 @@
-
+/* Общий фон страницы */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, #f5f3f0 0%, #ffffff 15%, #ffffff 85%, #f5f3f0 100%);
-  color: #222;
+  background: linear-gradient(to right, #f0f4f1 0%, #ffffff 15%, #ffffff 85%, #f0f4f1 100%); /* Мягкий бежевый градиент */
+  color: #3d0e17; /* Темно-зеленый цвет текста */
 }
+
+/* Шапка сайта */
 .topbar {
-  background-color: #e0cfc2;
-  color: #3d0e17;
+  background-color: #d0f0d0; /* Мягкий зеленый */
+  color: #3d0e17; /* Темно-зеленый текст */
   padding: 10px 30px;
   font-size: 16px;
   font-weight: 600;
@@ -15,6 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .topbar .left-link a {
   color: #3d0e17;
   font-size: 17px;
@@ -24,41 +27,49 @@ body {
   align-items: center;
   gap: 8px;
 }
+
 .topbar .right-info {
   display: flex;
   gap: 20px;
   align-items: center;
 }
+
+/* Шапка сайта */
 header {
-  background: #7e1b34;
+  background: #7e1b34; /* Вишневый цвет */
   color: white;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-grow: 1;
 }
+
 .nav a {
   color: white;
-  background-color: #a2283a;
+  background-color: #a2283a; /* Тот же вишневый */
   padding: 6px 12px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
 }
+
 .nav a:hover {
-  background-color: #c33b52;
+  background-color: #c33b52; /* Ярче */
 }
+
 .lang-switch {
   display: flex;
   gap: 10px;
 }
+
 .lang-switch a {
   background: white;
   color: #7e1b34;
@@ -67,26 +78,68 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
-main {
-  padding: 20px;
-}
-img.gallery-img {
-  width: 100%;
-  max-width: 300px;
-  margin: 10px 0;
-}
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #eee;
-}
 
-
+/* Контент страницы */
 main {
   max-width: 900px;
   margin: 0 auto;
-  background: white;
+  background: #f7f7f7; /* Легкий фоновый цвет для контента */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #3d0e17; /* Темно-зеленый текст */
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #3d0e17;
+}
+
+p {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Картинки галереи */
+.gallery-img {
+  width: 100%;
+  max-width: 400px; /* Увеличиваем ширину */
+  height: auto;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Социальные иконки */
+.social-icons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-icons a img {
+  height: 28px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f0f4f1; /* Тот же мягкий фон, что и на теле страницы */
+}
+
+/* Мобильный фон по бокам */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%); /* Мобильный фон */
+  }
 }
