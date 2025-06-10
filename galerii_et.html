@@ -76,14 +76,39 @@
   
   <main>
     <p>Tule virtuaalsesse galeriisse kohvikusse Söör Leiton:</p>
-    <img src="img/placeholder.jpg" class="gallery-img" alt="Kohviku interjöör" />
-    <img src="img/placeholder.jpg" class="gallery-img" alt="Toit 1" />
-    <img src="img/placeholder.jpg" class="gallery-img" alt="Toit 2" />
-  </main>
+    
+     <div class="carousel-container">
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <div class="carousel-slide">
+    <img src="img/1.jpeg" alt="Фото 1">
+    <img src="img/2.jpeg" alt="Фото 2">
+    <img src="img/3.jpeg" alt="Фото 3">
+    <img src="img/4.jpeg" alt="Фото 4">
+    <img src="img/5.jpeg" alt="Фото 5">
+    <img src="img/6.jpeg" alt="Фото 6">
+    <img src="img/7.jpeg" alt="Фото 7">
+    <img src="img/8.jpeg" alt="Фото 8">
+  </div>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+</div>
   
   <footer>
     <p>© 2025 Söör Leiton</p>
   </footer>
   
 </body>
-</html>
+ <script>
+  let slideIndex = 0;
+  const slides = document.querySelector('.carousel-slide');
+  const totalSlides = slides.children.length;
+
+  function moveSlide(n) {
+    slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+
+  setInterval(() => {
+    moveSlide(1);
+  }, 3000); // слайд меняется каждые 3 сек
+</script>
+
