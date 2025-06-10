@@ -6,43 +6,96 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-    }
     body {
       font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: #fdfbf6;
+      color: #2f3e30;
     }
-    .logo-img {
-      height: 26px;
-      margin-right: 8px;
-      vertical-align: middle;
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
     }
     .topbar {
-      background-color: #e0cfc2; /* бежевый фон */
+      background-color: #e0cfc2;
       color: #3d0e17;
-      padding: 8px 20px;
-      font-size: 15px;
-      font-weight: 600;
+      padding: 10px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     .topbar .left-link a {
       color: #3d0e17;
-      font-size: 16px;
       text-decoration: none;
       font-weight: bold;
       display: flex;
       align-items: center;
     }
+    .logo-img {
+      height: 26px;
+      margin-right: 8px;
+    }
     .right-info {
       display: flex;
       gap: 20px;
+    }
+    header {
+      background: #7e1b34;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
+    }
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      background: #a2283a;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .lang-switch a {
+      background: white;
+      color: #7e1b34;
+      padding: 4px 8px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .contact-left {
+      flex: 1;
+    }
+    .contact-right {
+      flex: 1;
+    }
+    .contact-right img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    a {
+      color: #3b5d3c;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
     }
   </style>
 </head>
 <body>
+
   <div class="topbar">
     <div class="left-link">
       <a href="https://soorleiton.ee/" target="_blank">
@@ -52,25 +105,22 @@
     </div>
     <div class="right-info">
       <span>📞 +372 54 77 0849</span>
-      <span>🕒 E–R 07:00–18:00, L–P 10:00–16:00</span>
+      <span>🕒 Пн–Пт 07:00–18:00, Сб–Вс 10:00–16:00</span>
     </div>
   </div>
 
-  <!-- остальной код без изменений -->
-
   <header>
     <div class="nav">
-      <a href="ettevottest.html">Ettevõttest</a>
-      <a href="menu_et.html">Menüü</a>
-      <a href="kontakt_et.html">Kontakt</a>
-      <a href="galerii_et.html">Galerii</a>
+      <a href="about.html">О нас</a>
+      <a href="menu_ru.html">Меню</a>
+      <a href="contacts_ru.html">Контакты</a>
+      <a href="gallery_ru.html">Галерея</a>
     </div>
-   
-    <div class="lang-switch"><a href="about.html">ru</a></div>
+    <div class="lang-switch"><a href="ettevottest.html">🇪🇪</a></div>
   </header>
 
   <main>
-    <div class="contact-container">
+    <div class="contact-left">
       <h2>OLEME SIIN, ET SIND ÕNNELIKUMAKS TEHA</h2>
 
       <p>Kui soovite tellimust või broneeringut teha, siis palun julgelt võtke meiega ühendust. Olete oodatud!</p>
@@ -96,17 +146,13 @@
         31025 Kohtla-Järve
       </p>
 
-      <div style="text-align:center;">
-        <img src="img/Снимок экрана 2025-05-26 201701.png" alt="Kohvik sissepääs" />
-      </div>
-
       <h3>Kaart:</h3>
-      <div style="text-align:center;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2060.6622923497446!2d27.4075395!3d59.3294061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469465a136fd236d%3A0x6efc6642c745a230!2sAhtme%20mnt%2016%2C%20Ahtme%2C%2031025%20Ida-Viru%20maakond%2C%20Estonia!5e0!3m2!1sen!2see!4v1717440000000" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2060.6622923497446!2d27.4075395!3d59.3294061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469465a136fd236d%3A0x6efc6642c745a230!2sAhtme%20mnt%2016%2C%20Ahtme%2C%2031025%20Ida-Viru%20maakond%2C%20Estonia!5e0!3m2!1sen!2see!4v1717440000000"
+        width="100%" height="280" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
-      
-      </p>
+    <div class="contact-right">
+      <img src="img/Снимок экрана 2025-05-26 201701.png" alt="Kohvik Leiton Poster" />
     </div>
   </main>
 
