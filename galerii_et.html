@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <title>Söör Leiton</title>
   <link rel="stylesheet" href="css/style.css" />
-  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     h1, h2 {
@@ -13,26 +12,52 @@
     body {
       font-family: 'Montserrat', sans-serif;
     }
-    .gallery-img {
-      max-width: 100%;
-      margin: 15px 0;
-      border-radius: 12px;
-      display: block;
+    .logo-img {
+      height: 26px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    .topbar {
+      background-color: #e0cfc2; /* бежевый фон */
+      color: #3d0e17;
+      padding: 8px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar .left-link a {
+      color: #3d0e17;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    .right-info {
+      display: flex;
+      gap: 20px;
+      align-items: center;
     }
   </style>
 </head>
 <body>
-  
   <div class="topbar">
     <div class="left-link">
-      <a href=" href="https://soorleiton.ee/" target="_blank"> Kohvik Söör Leiton</a>
+      <a href="https://soorleiton.ee/" target="_blank">
+        <img src="img/logo_bulldog.png" alt="Logo" class="logo-img" />
+        Kohvik Söör Leiton
+      </a>
     </div>
     <div class="right-info">
       <span>📞 +372 54 77 0849</span>
-      <span>🕒 E–R 07:00–18:00, L–P 10:00–16:00</span>
+      <span>🕒 Пн–Пт 07:00–18:00, Сб–Вс 10:00–16:00</span>
     </div>
   </div>
-  
+
+  <!-- остальной код без изменений -->
+
   <header>
     <div class="nav">
       <a href="ettevottest.html">Ettevõttest</a>
