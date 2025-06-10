@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="et">
+<!DOCTYPE html><html lang="et">
 <head>
   <meta charset="UTF-8" />
   <title>Söör Leiton</title>
   <link rel="stylesheet" href="css/style.css" />
-  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
     h1, h2 {
@@ -12,22 +10,83 @@
     }
     body {
       font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: #f0f8f5;
+    }
+    .about-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .about-image {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    .about-letter {
+      background: #ffffffdd;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      line-height: 1.8;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      font-size: 1.1em;
+      font-family: 'Georgia', serif;
+    }
+    .signature {
+      text-align: right;
+      margin-top: 40px;
+      font-style: italic;
+    }
+    .topbar {
+      background-color: #e0cfc2;
+      color: #3d0e17;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    header {
+      background: #7e1b34;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav a {
+      color: white;
+      background-color: #a2283a;
+      padding: 6px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .lang-switch a {
+      background: white;
+      color: #7e1b34;
+      padding: 4px 8px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
     }
   </style>
 </head>
 <body>
-  
   <div class="topbar">
     <div class="left-link">
-      <a href=" href="https://soorleiton.ee/" target="_blank"> Kohvik Söör Leiton</a>
+      <a href="https://soorleiton.ee/" target="_blank">🏠 Kohvik Söör Leiton</a>
     </div>
     <div class="right-info">
       <span>📞 +372 54 77 0849</span>
       <span>🕒 E–R 07:00–18:00, L–P 10:00–16:00</span>
     </div>
-  </div>
-  
-  <header>
+  </div>  <header>
     <div class="nav">
       <a href="ettevottest.html">Ettevõttest</a>
       <a href="menu_et.html">Menüü</a>
@@ -35,30 +94,28 @@
       <a href="galerii_et.html">Galerii</a>
     </div>
     <div class="lang-switch"><a href="index.html">🇷🇺</a></div>
-  </header>
-  
-  <main>
-    <div class="about-letter" style="font-family: 'Georgia', serif; font-size: 1.1em; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 20px;">
-      <h2 style="text-align: center;">KÜLASTAJAD ARMASTAVAD MEIE TOITU</h2>
-      <p style="text-align: center;"><em>kes on käinud, see teab ......</em></p>
+  </header>  <main>
+    <div class="about-wrapper">
+      <img src="img/your-background.jpg" alt="Cafe photo" class="about-image">
+      <div class="about-letter">
+        <h2 style="text-align: center; font-size: 1.8em; color: #4a7c59;">KÜLASTAJAD ARMASTAVAD MEIE TOITU</h2>
+        <p style="text-align: center; font-style: italic; color: #4a7c59;">kes on käinud, see teab ......</p><p>Kohvik Söör Leiton on õdus ja hea söögikoht ning parim kohvik Kohtla-Järve linna Ahtme linnaosas.</p>
 
-      <p>Kohvik Söör Leiton on õdus ja hea söögikoht ning parim kohvik Kohtla-Järve linna Ahtme linnaosas.</p>
+    <p>Meil on saadaval suursugune hommiku- ja lõunasöögimenüü. Mõeldud on kõigi peale – nii neile, kes vajavad kiiret hommikusööki, kui ka neile, kes soovivad nautida aega sõprade või perega.</p>
 
-      <p>Meil on saadaval suursugune hommiku- ja lõunasöögimenüü. Mõeldud on kõigi peale – nii neile, kes vajavad kiiret hommikusööki, kui ka neile, kes soovivad nautida aega sõprade või perega.</p>
+    <p>Kohviku vitriinid on täis magusaid kooke, mida saab nautida kohapeal või kaasa osta. Tööpäeviti avatud alates 7:00 ja nädalavahetustel alates 10:00.</p>
 
-      <p>Kohviku vitriinid on täis magusaid kooke, mida saab nautida kohapeal või kaasa osta. Tööpäeviti avatud alates 7:00 ja nädalavahetustel alates 10:00.</p>
+    <p>Tegeleme ka eritellimustega – sünnipäevad, pulmad või muud pidulikud sündmused. Oleme avatud kõikidele väljakutsetele!</p>
 
-      <p>Tegeleme ka eritellimustega – sünnipäevad, pulmad või muud pidulikud sündmused. Oleme avatud kõikidele väljakutsetele!</p>
+    <p class="signature">
+      Peatsete kohtumisteni,<br>
+      kohvik Leiton’i perekond
+    </p>
+  </div>
+</div>
 
-      <p style="text-align: right; margin-top: 40px;">
-        <em>Peatsete kohtumisteni,<br>kohvik Leiton’i perekond</em>
-      </p>
-    </div>
-  </main>
-  
-  <footer>
+  </main>  <footer>
     <p>© 2025 Söör Leiton</p>
   </footer>
-  
 </body>
 </html>
