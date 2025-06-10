@@ -1,15 +1,16 @@
-<!DOCTYPE html><html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>О нас – Söör Leiton</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Georgia&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background: #f5f3f0;
-      color: #333;
+      color: #222;
     }
     .topbar {
       background-color: #e0cfc2;
@@ -21,111 +22,117 @@
       justify-content: space-between;
       align-items: center;
     }
+    .topbar .left-link a {
+      color: #3d0e17;
+      font-size: 17px;
+      text-decoration: none;
+      font-weight: bold;
+    }
     header {
-      background-color: #7e1b34;
+      background: #7e1b34;
       color: white;
-      padding: 15px;
+      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
     .nav a {
       color: white;
+      background-color: #a2283a;
+      padding: 6px 12px;
+      border-radius: 8px;
       text-decoration: none;
-      margin: 0 10px;
       font-weight: bold;
     }
     .lang-switch a {
       background: white;
       color: #7e1b34;
-      padding: 5px 10px;
+      padding: 4px 8px;
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
     }
-    .main-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 15px;
-    }
-    .photo-banner {
-      max-width: 800px;
+    .hero-image {
       width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+    .letter-section {
+      max-width: 850px;
+      margin: 30px auto;
+      background: linear-gradient(135deg, #f0f8f3, #f7f4ee);
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    .button-group {
-      margin-top: 20px;
-    }
-    .button-group a {
-      background-color: #3d6657;
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      margin: 0 10px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .button-group a:hover {
-      background-color: #4f816d;
-    }
-    .text-box {
-      background: #edf4ed;
-      max-width: 800px;
-      padding: 30px;
-      border-radius: 10px;
-      margin-top: 40px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 40px;
       font-family: 'Georgia', serif;
-      line-height: 1.7;
-      color: #2c4b3b;
       font-size: 1.1em;
+      line-height: 1.8;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
     }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #eee;
+    .signature {
+      text-align: right;
+      font-style: italic;
       margin-top: 40px;
+      font-size: 1.05em;
     }
   </style>
 </head>
 <body>
+
   <div class="topbar">
     <div class="left-link">
-      <a  href="https://soorleiton.ee/" target="_blank"> Kohvik Söör Leiton</a>
+      <a href="https://kjvhk.ee" target="_blank">🏠 Наш дом</a>
     </div>
     <div class="right-info">
       <span>📞 +372 54 77 0849</span>
       <span>🕒 Пн–Пт 07:00–18:00, Сб–Вс 10:00–16:00</span>
     </div>
   </div>
+
   <header>
     <div class="nav">
-       <a href="about.html">О нас</a>
+      <a href="about.html">О нас</a>
       <a href="menu_ru.html">Меню</a>
       <a href="contacts_ru.html">Контакты</a>
       <a href="gallery_ru.html">Галерея</a>
     </div>
-    <div class="lang-switch"><a href="ettevottest.html">🇪🇪</a></div>
-  </header>  <div class="main-wrapper">
-    <img src="img/your-background.jpg" alt="Кафе" class="photo-banner">
-    
+    <div class="lang-switch"><a href="home_et.html">🇪🇪</a></div>
+  </header>
+
+  <main>
+    <img src="img/your-background.jpg" alt="Фото кафе" class="hero-image" />
+
+    <div class="letter-section">
+      <p><strong>ПОСЕТИТЕЛЯМ НРАВИТСЯ НАША КУХНЯ</strong><br>
+         кто побывал, тот знает……….
+      </p>
+
+      <p>Кафе Söör Leiton — уютное кафе и лучшее место в Ахтмеской части города Кохтла-Ярве, где можно достойно поесть.</p>
+
+      <p>У нас разнообразный выбор меню завтраков и обедов, которые просто необходимо попробовать. Мы подумали обо всех — и о тех, кто спешит утром на работу, кому нужна каша и бодрящий кофе, и о постоянных клиентах, которые приходят просто пообщаться и насладиться вкусным десертом.</p>
+
+      <p>Кафе Söör Leiton сделало акцент на пирожных, пирогах и кофе. Наши витрины полны аппетитных сладостей — их можно съесть на месте или взять с собой, чтобы сохранить сладкий след в памяти.</p>
+
+      <p>Приглашаем вас на полезный и вкусный завтрак по будням с 7:00 и по выходным с 10:00.</p>
+
+      <p>Мы также принимаем заказы на мероприятия: дни рождения, свадьбы, семейные торжества. Мы открыты для ваших идей!</p>
+
+      <p>Мы рады доставлять кулинарное удовольствие и быть комфортным местом, где можно встретиться с друзьями или просто посидеть и написать роман своей мечты.</p>
+
+      <p class="signature">
+        До скорой встречи,<br>
+        семья кафе Leiton
+      </p>
     </div>
-    <div class="text-box">
-      <p><strong>ПОСЕТИТЕЛЯМ НРАВИТСЯ НАША КУХНЯ</strong><br>кто побывал, тот знает……….<br><br>
-      Кафе Söör Leiton — уютное кафе и лучшее место в Ахтмеской части города Кохтла-Ярве, где можно достойно поесть.
-      <br><br>У нас разнообразный выбор меню завтраков и обедов, которые просто необходимо попробовать.
-      Мы подумали обо всех — и о тех, кто спешит ранним утром на работу, и о тех, кто любит проводить время за чашечкой чая с тортом.
-      <br><br>Мы сделали акцент на пирожных, пирогах и кофе. Витрины кафе полны сладких и аппетитных десертов, которые можно взять с собой.
-      <br><br>Приглашаем вас на полезный и полноценный завтрак по будням с 7:00 и по выходным с 10:00.
-      Мы открыты для любых вызовов — дни рождения, свадьбы, семейные торжества.
-      <br><br>Мы счастливы доставлять удовольствие нашим клиентам и быть местом вдохновения, где можно встретиться с друзьями или написать роман своей мечты.
-      <br><br>До скорой встречи,<br><em>семья кафе Leiton</em></p>
-    </div>
-  </div>  <footer>
-    <p>© 2025 Söör Leiton</p>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding: 15px; background: #eee;">© 2025 Söör Leiton</p>
   </footer>
+
 </body>
 </html>
