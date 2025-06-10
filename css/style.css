@@ -141,10 +141,51 @@ footer {
   padding: 15px;
   background: #f0f4f1; /* Тот же мягкий фон, что и на теле страницы */
 }
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
 
+.carousel-slide {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: calc(100% * 8); /* 8 изображений */
+}
+
+.carousel-slide img {
+  width: 100%;
+  flex-shrink: 0;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0 12px;
+  z-index: 100;
+  border-radius: 4px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
 /* Мобильный фон по бокам */
 @media (max-width: 768px) {
   body {
     background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%); /* Мобильный фон */
   }
+  
+    slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+</script>
 }
