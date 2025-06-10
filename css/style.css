@@ -1,10 +1,10 @@
-
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to right, #f5f3f0 0%, #ffffff 15%, #ffffff 85%, #f5f3f0 100%);
   color: #222;
 }
+
 .topbar {
   background-color: #e0cfc2;
   color: #3d0e17;
@@ -15,30 +15,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.topbar .left-link a {
-  color: #3d0e17;
-  font-size: 17px;
-  text-decoration: none;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.topbar .right-info {
-  display: flex;
-.topbar {
-  background-color: #e0cfc2;  /* бежевый */
-  color: #3d0e17;             /* тёмно-вишнёвый */
-  padding: 10px 30px;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .topbar .left-link a {
-  color: #3d0e17;             /* тёмно-вишнёвый */
+  color: #3d0e17;
   font-size: 17px;
   text-decoration: none;
   font-weight: bold;
@@ -54,7 +33,7 @@ body {
 }
 
 header {
-  background: #7e1b34;        /* глубокий вишнёвый */
+  background: #7e1b34; /* Глубокий винный цвет */
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -71,7 +50,7 @@ header {
 
 .nav a {
   color: white;
-  background-color: #a2283a;
+  background-color: #a2283a; /* Красный оттенок */
   padding: 6px 12px;
   border-radius: 8px;
   text-decoration: none;
@@ -80,7 +59,7 @@ header {
 }
 
 .nav a:hover {
-  background-color: #c33b52;
+  background-color: #c33b52; /* При наведении светлее */
 }
 
 .lang-switch {
@@ -96,57 +75,24 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
-}
-.nav {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-grow: 1;
-}
-.nav a {
-  color: white;
-  background-color: #a2283a;
-  padding: 6px 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-.nav a:hover {
-  background-color: #c33b52;
-}
-.lang-switch {
-  display: flex;
-  gap: 10px;
-}
-.lang-switch a {
-  background: white;
-  color: #7e1b34;
-  padding: 4px 8px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
+
 main {
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
 img.gallery-img {
   width: 100%;
   max-width: 300px;
   margin: 10px 0;
 }
+
 footer {
   text-align: center;
   padding: 15px;
   background: #eee;
-}
-
-
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
