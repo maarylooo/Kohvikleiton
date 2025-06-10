@@ -184,8 +184,21 @@ footer {
     background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%); /* Мобильный фон */
   }
   
+    <script>
+  let slideIndex = 0;
+  const slides = document.querySelector('.carousel-slide');
+  const totalSlides = slides.children.length;
+
+  function moveSlide(n) {
     slideIndex = (slideIndex + n + totalSlides) % totalSlides;
     slides.style.transform = `translateX(-${slideIndex * 100}%)`;
   }
+
+  // Автоматическое перемещение слайдов каждые 3 секунды
+  setInterval(() => {
+    moveSlide(1);
+  }, 3000);
+</script>
+
 </script>
 }
