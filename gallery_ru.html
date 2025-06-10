@@ -95,7 +95,7 @@
   </footer>
   
 </body>
-  <script>
+ <script>
   let slideIndex = 0;
   const slides = document.querySelector('.carousel-slide');
   const totalSlides = slides.children.length;
@@ -105,10 +105,10 @@
     slides.style.transform = `translateX(-${slideIndex * 100}%)`;
   }
 
-  // Автоматическое перемещение слайдов каждые 3 секунды
   setInterval(() => {
     moveSlide(1);
-  }, 3000);
+  }, 3000); // слайд меняется каждые 3 сек
 </script>
+
 
 </html>
