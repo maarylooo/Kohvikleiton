@@ -72,10 +72,20 @@
   
   <main>
     <p>Загляните в нашу виртуальную галерею кафе Söör Leiton:</p>
-    <img src="img/placeholder.jpg" class="gallery-img" alt="Интерьер кафе" />
-    <img src="img/placeholder.jpg" class="gallery-img" alt="Блюдо 1" />
-    <img src="img/placeholder.jpg" class="gallery-img" alt="Блюдо 2" />
-  </main>
+    <div class="carousel-container">
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <div class="carousel-slide">
+    <img src="img/1.jpeg" alt="Фото 1">
+    <img src="img/2.jpeg" alt="Фото 2">
+    <img src="img/3.jpeg" alt="Фото 3">
+    <img src="img/4.jpeg" alt="Фото 4">
+    <img src="img/5.jpeg" alt="Фото 5">
+    <img src="img/6.jpeg" alt="Фото 6">
+    <img src="img/7.jpeg" alt="Фото 7">
+    <img src="img/8.jpeg" alt="Фото 8">
+  </div>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+</div>
   
   <footer>
     <p>© 2025 Söör Leiton</p>
