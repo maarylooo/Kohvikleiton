@@ -118,7 +118,7 @@ p {
   border-radius: 10px;
 }
 .logo-img {
-  height: 24px;  /* было 34px — теперь меньше */
+  height: 19px;  /* было 34px — теперь меньше */
   margin-right: 8px;
   vertical-align: middle;
 }
