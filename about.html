@@ -2,32 +2,163 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Söör Leiton</title>
+  <title>Söör Leiton — О нас</title>
   <link rel="stylesheet" href="css/style.css" />
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-    }
     body {
+      margin: 0;
       font-family: 'Montserrat', sans-serif;
+      background: #f5f3f0;
+      color: #222;
+    }
+    .topbar {
+      background-color: #e0cfc2;
+      color: #3d0e17;
+      padding: 10px 30px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar .left-link a {
+      color: #3d0e17;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .topbar .right-info {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    header {
+      background: #7e1b34;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-grow: 1;
+    }
+    .nav a {
+      color: white;
+      background-color: #a2283a;
+      padding: 6px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .nav a:hover {
+      background-color: #c33b52;
+    }
+    .lang-switch a {
+      background: white;
+      color: #7e1b34;
+      padding: 4px 8px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .about-image-container {
+      position: relative;
+      flex: 1 1 500px;
+      min-width: 300px;
+      max-height: 600px;
+      overflow: hidden;
+      border-radius: 12px 0 0 12px;
+    }
+
+    .about-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .buttons-on-image {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .buttons-on-image a {
+      background-color: #7e1b34;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+
+    .buttons-on-image a:hover {
+      background-color: #a2283a;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+      padding: 30px 40px;
+      font-family: 'Georgia', serif;
+      font-size: 1.15em;
+      color: #3d0e17;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 900px) {
+      .about-section {
+        flex-direction: column;
+      }
+      .about-image-container {
+        border-radius: 12px 12px 0 0;
+        max-height: 400px;
+      }
+      .about-text {
+        padding: 20px;
+      }
     }
   </style>
-
 </head>
 <body>
-  
   <div class="topbar">
-    <div class="left-link">
-      <a href="https://soorleiton.ee/" target="_blank"> Kohvik Söör Leiton</a>
-    </div>
+    <div class="left-link"><a href="https://kjvhk.ee" target="_blank">🏠 Наш дом</a></div>
     <div class="right-info">
       <span>📞 +372 54 77 0849</span>
       <span>🕒 Пн–Пт 07:00–18:00, Сб–Вс 10:00–16:00</span>
     </div>
   </div>
-    
+
   <header>
     <div class="nav">
       <a href="about.html">О нас</a>
@@ -37,35 +168,27 @@
     </div>
     <div class="lang-switch"><a href="home_et.html">🇪🇪</a></div>
   </header>
-  
+
   <main>
-    <div class="about-letter" style="font-family: 'Georgia', serif; font-size: 1.1em; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 20px;">
-      <h2 style="text-align: center;">ПОСЕТИТЕЛЯМ НРАВИТСЯ НАША КУХНЯ</h2>
-      <p style="text-align: center;"><em>кто побывал, тот знает……….</em></p>
-
-      <p>Кафе Söör Leiton — уютное кафе и лучшее место в Ахтмеской части города Кохтла-Ярве, где можно достойно поесть.</p>
-
-      <p>У нас разнообразный выбор меню завтраков и обедов, которые просто необходимо попробовать.
-      Мы подумали обо всех — и о тех спешащих ранним утром на работу, которым просто необходима каша и бодрящий кофе для энергии, и о вкусовых пристрастиях постоянных клиентов, которые просто заходят в кафе посидеть, пообщаться и обменяться впечатлениями за обедом или за чашечкой чая с тортом.</p>
-
-      <p>Кафе Söör Leiton сделал акцент на пирожных, пирогах и кофе. Витрины кафе полны сладких и аппетитных пирожных, которыми можно насладиться на месте или купить с собой, оставив сладкую нотку в ваших воспоминаниях.</p>
-
-      <p>Приглашаем вас в кафе Söör Leiton на полезный и полноценный завтрак по будням с 7:00 и по выходным с 10:00 часов утра.</p>
-
-      <p>Кафе Söör Leiton также работает по желанию клиентов «на заказ» — дни рождения, свадьбы или семейные торжества — мы открыты для любых вызовов!</p>
-
-      <p>Кафе Söör Leiton безумно счастлив доставлять кулинарное удовольствие своим клиентам, а также быть комфортным местом, где возможно проводить незабываемые совместные встречи со своими лучшими друзьями или устроившись поудобнее — написать роман своей мечты.</p>
-
-      <p style="text-align: right; margin-top: 40px;">
-        До скорой встречи,<br>
-        <strong>семья кафе Leiton</strong>
-      </p>
-    </div>
+    <section class="about-section">
+      <div class="about-image-container">
+        <img src="img/your-background.jpg.jpg" alt="Кафе Söör Leiton" />
+        <div class="buttons-on-image">
+          <a href="menu_ru.html">Меню</a>
+          <a href="contacts_ru.html">Контакты</a>
+        </div>
+      </div>
+      <div class="about-text">
+        <h1>Добро пожаловать в кафе Söör Leiton!</h1>
+        <p>Кафе Söör Leiton — уютное и атмосферное место в Ахтмеской части Кохтла-Ярве, где вы можете насладиться вкусными завтраками, обедами и великолепными десертами.</p>
+        <p>Мы ежедневно готовим свежие блюда, уделяем внимание качеству и заботимся о вашем комфорте. Приходите к нам в любое удобное время — в одиночестве, с друзьями или с семьёй.</p>
+        <p>Загляните в наше меню и свяжитесь с нами по любым вопросам. Мы рады быть частью ваших приятных моментов!</p>
+      </div>
+    </section>
   </main>
-  
-  <footer>
+
+  <footer style="text-align: center; padding: 15px; background: #eee;">
     <p>© 2025 Söör Leiton</p>
   </footer>
-  
 </body>
 </html>
