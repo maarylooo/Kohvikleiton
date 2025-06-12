@@ -1,4 +1,4 @@
-body 
+body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to right, #e0cfc2 0%, #ffffff 10%, #ffffff 90%, #e0cfc2 100%);
@@ -182,9 +182,3 @@ footer {
 @media (max-width: 768px) {
   body {
     background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%); /* Мобильный фон */
-  }
-  
-  
-
-</script>
-}
