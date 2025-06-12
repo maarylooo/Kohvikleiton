@@ -1,159 +1,169 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <title>Söör Leiton</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
-  <style>
-   body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      background: linear-gradient(to right, #f5f3f0 0%, #ffffff 15%, #ffffff 85%, #f5f3f0 100%);Add commentMore actions
-      color: #1b3d2f;
-    }
-}
-
-.main-content {
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: #ffffff; /* белая внутренняя карточка */
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
-}
-
-    .topbar {
-      background-color: #e0cfc2;
-      padding: 10px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: bold;
-    }
-
-    .topbar a {
-      text-decoration: none;
-      color: #3d0e17;
-    }
-
-    header {
-      background: #7e1b34;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      padding: 6px 12px;
-      background-color: #a2283a;
-      border-radius: 8px;
-    }
-
-    .lang-switch a {
-      background: white;
-      color: #7e1b34;
-      padding: 4px 8px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .main-content {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: #e8f5ec;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-
-    .main-content h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 28px;
-      color: #1b3d2f;
-      text-transform: uppercase;
-    }
-
-    .main-content em {
-      display: block;
-      text-align: center;
-      font-size: 18px;
-      color: #2d5d43;
-      margin-bottom: 20px;
-      font-style: italic;
-    }
-
-    .main-content p {
-      font-family: 'Verdana', sans-serif;
-      font-size: 1.05em;
-      color: #1b3d2f;
-      line-height: 1.8;
-    }
-
-    .main-content .signature {
-      text-align: right;
-      font-style: italic;
-      margin-top: 40px;
-    }
-
-    .main-content img {
-      display: block;
-      margin: 0 auto 25px auto;
-      max-width: 100%;
-      border-radius: 12px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #eee;
-      color: #333;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="topbar">
-    <div class="left-link">
-  <a href="https://soorleiton.ee/" target="_blank">
-    <img src="img/logo_bulldog.png" alt="Logo" class="logo-img" />
-    Kohvik Söör Leiton
-  </a>
-</div>
-    <div class="right-info">
-      <span>📞 +372 54 77 0849</span>
-      <span>🕒 Пн–Пт 07:00–18:00, Сб–Вс 10:00–16:00</span>
-    </div>
-  </div>
-
-  <header>
-    <div class="nav">
-      <a href="about.html">О нас</a>
-      <a href="menu_ru.html">Меню</a>
-      <a href="contacts_ru.html">Контакты</a>
-      <a href="gallery_ru.html">Галерея</a>
-    </div>
-    <div class="lang-switch"><a href="ettevottest.html">🇪🇪</a></div>
-  </header>
-
-  <main>
-    <div class="main-content">
-      <img src="img/your-background.jpg" alt="Кафе Söör Leiton">
-      
-      <h2>ПОСЕТИТЕЛЯМ НРАВИТСЯ НАША КУХНЯ</h2>
-      <em>кто побывал, тот знает……….</em>
-
-      <p>Кафе Söör Leiton — уютное кафе и лучшее место в Ахтмеской части города Кохтла-Ярве, где можно достойно поесть.</p>
-
 <!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+  <meta charset="UTF-8" />  
+  <title>Söör Leiton</title>  
+  <link rel="stylesheet" href="css/style.css" />  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">  
+  <style>  
+    body {  
+      font-family: 'Montserrat', sans-serif;  
+      margin: 0;  
+      background: linear-gradient(to right, #f5f3f0 0%, #ffffff 15%, #ffffff 85%, #f5f3f0 100%);  
+      color: #1b3d2f;  
+    }  
+  
+    .topbar {  
+      background-color: #e0cfc2;  
+      padding: 10px 30px;  
+      display: flex;  
+      justify-content: space-between;  
+      align-items: center;  
+      font-weight: bold;  
+    }  
+  
+    .topbar a {  
+      text-decoration: none;  
+      color: #3d0e17;  
+    }  
+  
+    header {  
+      background: #7e1b34;  
+      color: white;  
+      padding: 10px 20px;  
+      display: flex;  
+      justify-content: space-between;  
+      align-items: center;  
+    }  
+  
+    .nav {  
+      display: flex;  
+      gap: 20px;  
+    }  
+  
+    .nav a {  
+      color: white;  
+      text-decoration: none;  
+      padding: 6px 12px;  
+      background-color: #a2283a;  
+      border-radius: 8px;  
+    }  
+  
+    .lang-switch a {  
+      background: white;  
+      color: #7e1b34;  
+      padding: 4px 8px;  
+      border-radius: 5px;  
+      text-decoration: none;  
+      font-weight: bold;  
+    }  
+  
+    .main-content {  
+      max-width: 900px;  
+      margin: 30px auto;  
+      background-color: #e8f5ec;  
+      padding: 30px;  
+      border-radius: 12px;  
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);  
+    }  
+  
+    .main-content h2 {  
+      text-align: center;  
+      font-family: 'Playfair Display', serif;  
+      font-size: 28px;  
+      color: #1b3d2f;  
+      text-transform: uppercase;  
+    }  
+  
+    .main-content em {  
+      display: block;  
+      text-align: center;  
+      font-size: 18px;  
+      color: #2d5d43;  
+      margin-bottom: 20px;  
+      font-style: italic;  
+    }  
+  
+    .main-content p {  
+      font-family: 'Verdana', sans-serif;  
+      font-size: 1.05em;  
+      color: #1b3d2f;  
+      line-height: 1.8;  
+    }  
+  
+    .main-content .signature {  
+      text-align: right;  
+      font-style: italic;  
+      margin-top: 40px;  
+    }  
+  
+    .main-content img {  
+      display: block;  
+      margin: 0 auto 25px auto;  
+      max-width: 100%;  
+      border-radius: 12px;  
+    }  
+  
+    footer {  
+      text-align: center;  
+      padding: 15px;  
+      background: #eee;  
+      color: #333;  
+    }  
+  </style>  
+</head>  
+<body>  
+  
+  <div class="topbar">  
+    <div class="left-link">  
+      <a href="https://soorleiton.ee/" target="_blank">  
+        <img src="img/logo_bulldog.png" alt="Logo" class="logo-img" />  
+        Kohvik Söör Leiton  
+      </a>  
+    </div>  
+    <div class="right-info">  
+      <span>📞 +372 54 77 0849</span>  
+      <span>🕒 Пн–Пт 07:00–18:00, Сб–Вс 10:00–16:00</span>  
+    </div>  
+  </div>  
+  
+  <header>  
+    <div class="nav">  
+      <a href="about.html">О нас</a>  
+      <a href="menu_ru.html">Меню</a>  
+      <a href="contacts_ru.html">Контакты</a>  
+      <a href="gallery_ru.html">Галерея</a>  
+    </div>  
+    <div class="lang-switch"><a href="ettevottest.html">🇪🇪</a></div>  
+  </header>  
+  
+  <main>  
+    <div class="main-content">  
+      <img src="img/your-background.jpg" alt="Кафе Söör Leiton">  
+        
+      <h2>ПОСЕТИТЕЛЯМ НРАВИТСЯ НАША КУХНЯ</h2>  
+      <em>кто побывал, тот знает……….</em>  
+  
+      <p>Кафе Söör Leiton — уютное кафе и лучшее место в Ахтмеской части города Кохтла-Ярве, где можно достойно поесть.</p>  
+  
+      <p>У нас разнообразный выбор меню завтраков и обедов, которые просто необходимо попробовать. Мы подумали обо всех – и о тех, кто спешит ранним утром на работу и нуждается в каше и бодрящем кофе, и о наших постоянных гостях, которые приходят посидеть, пообщаться и обменяться впечатлениями за обедом или чаем с тортом.</p>
+<p>Мы сделали акцент на пирожных, пирогах и кофе. Витрины полны сладких и аппетитных десертов, которые можно съесть на месте или взять с собой, оставив сладкую нотку в ваших воспоминаниях.</p>  
+  
+      <p>Приглашаем вас на полноценный завтрак по будням с 7:00 и по выходным с 10:00 утра.</p>  
+  
+      <p>Кафе Söör Leiton также работает по индивидуальным заказам: дни рождения, свадьбы, семейные торжества — мы всегда открыты для ваших пожеланий.</p>  
+      <p>Нам приятно доставлять кулинарное удовольствие нашим гостям и быть тем уютным местом, где можно проводить душевные встречи с друзьями или писать роман своей мечты.</p>  
+  
+      <p class="signature">  
+        До скорой встречи,<br>  
+        семья кафе Leiton  
+      </p>  
+    </div>  
+  </main>  
+  
+  <footer>  
+    <p>© 2025 Söör Leiton</p>  
+  </footer>  
+  
+</body>  
+</html>
