@@ -1,11 +1,10 @@
-body {Add commentMore actions
+body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to right, #e0cfc2 0%, #ffffff 10%, #ffffff 90%, #e0cfc2 100%);
   color: #2f3e30;
-
 }
-/* Общий фон страницы */
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -16,28 +15,24 @@ body {
 .main-content {
   max-width: 900px;
   margin: 40px auto;
-  background-color: #ffffff; /* теперь фон ярче – чистое белое */
+  background-color: #ffffff;
   padding: 40px 30px;
   border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.07);
 }
 
-/* яркая верхняя полоса */
 .topbar {
   background-color: #f9e4dc;
   color: #3d0e17;
 }
 
-/* адаптировал кнопки навигации */
 .nav a {
   background-color: #fff5f5;
   color: #7e1b34;
 }
 
-/* hover эффект */
 .nav a:hover {
   background-color: #ffdede;
-}
 }
 
 .nav {
@@ -49,7 +44,7 @@ body {
 
 .nav a {
   color: white;
-  background-color: #a2283a; /* Тот же вишневый */
+  background-color: #a2283a;
   padding: 6px 12px;
   border-radius: 8px;
   text-decoration: none;
@@ -58,7 +53,7 @@ body {
 }
 
 .nav a:hover {
-  background-color: #c33b52; /* Ярче */
+  background-color: #c33b52;
 }
 
 .lang-switch {
@@ -75,11 +70,10 @@ body {
   font-weight: bold;
 }
 
-/* Контент страницы */
 main {
   max-width: 900px;
   margin: 0 auto;
-  background: #f7f7f7; /* Легкий фоновый цвет для контента */
+  background: #f7f7f7;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -87,7 +81,7 @@ main {
 
 h1, h2 {
   font-family: 'Playfair Display', serif;
-  color: #3d0e17; /* Темно-зеленый текст */
+  color: #3d0e17;
   text-align: center;
 }
 
@@ -104,22 +98,21 @@ p {
   margin-bottom: 15px;
 }
 
-/* Картинки галереи */
 .gallery-img {
   width: 100%;
-  max-width: 400px; /* Увеличиваем ширину */
+  max-width: 400px;
   height: auto;
   margin: 15px auto;
   display: block;
   border-radius: 10px;
 }
+
 .logo-img {
-  height: 19px;  /* было 34px — теперь меньше */
+  height: 19px;
   margin-right: 8px;
   vertical-align: middle;
 }
 
-/* Социальные иконки */
 .social-icons {
   text-align: center;
   margin-top: 40px;
@@ -131,12 +124,12 @@ p {
   margin: 0 10px;
 }
 
-/* Футер */
 footer {
   text-align: center;
   padding: 15px;
-  background: #f0f4f1; /* Тот же мягкий фон, что и на теле страницы */
+  background: #f0f4f1;
 }
+
 .carousel-container {
   max-width: 800px;
   margin: 40px auto;
@@ -145,7 +138,7 @@ footer {
   position: relative;
   background: #ffffff;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  height: 500px; /* можешь изменить под свой дизайн */
+  height: 500px;
 }
 
 .carousel-slide {
@@ -158,22 +151,16 @@ footer {
 .carousel-slide img {
   width: 100%;
   height: 100%;
-  object-fit:  contain;; /* Показывает фото без искажений */
+  object-fit: contain;
   flex-shrink: 0;
   border-radius: 10px;
 }
 
-}
-
 .prev { left: 10px; }
 .next { right: 10px; }
-/* Мобильный фон по бокам */
+
 @media (max-width: 768px) {
   body {
-    background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%); /* Мобильный фон */
+    background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%);
   }
-  
-  
-
-</script>
 }
