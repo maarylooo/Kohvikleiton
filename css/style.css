@@ -1,166 +1,175 @@
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, #e0cfc2 0%, #ffffff 10%, #ffffff 90%, #e0cfc2 100%);
-  color: #2f3e30;
-}
+<!DOCTYPE html>Add commentMore actions
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Söör Leiton</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #3d0e17;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #f7f5f3 0%, #f2ede9 50%, #f7f5f3 100%);
+      color: #333;
+    }
+    .topbar {
+      background-color: #e0cfc2;
+      color: #3d0e17;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+    }
+    .topbar .left-link a {
+      color: #3d0e17;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    .logo-img {
+      height: 26px;
+      margin-right: 8px;
+    }
+    header {
+      background: #7e1b34;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-grow: 1;
+    }
+    .nav a {
+      color: white;
+      background-color: #a2283a;
+      padding: 6px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .nav a:hover {
+      background-color: #c33b52;
+    }
+    .lang-switch a {
+      background: white;
+      color: #7e1b34;
+      padding: 4px 8px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+    .info-text {
+      flex: 1;
+      padding-right: 30px;
+      font-size: 1.05em;
+      line-height: 1.8;
+    }
+    .info-text a {
+      color: #336655;
+      font-weight: bold;
+    }
+    .info-text strong {
+      color: #7e1b34;
+    }
+    .contact-image {
+      flex: 1;
+      text-align: right;
+    }
+    .contact-image img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    iframe {
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1eae5;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="left-link">
+      <a href="https://soorleiton.ee/" target="_blank">
+        <img src="img/logo_bulldog.png" alt="Logo" class="logo-img" />
+        Kohvik Söör Leiton
+      </a>
+    </div>
+    <div class="right-info">
+      <span>📞 +372 54 77 0849</span>
+      <span>🕒 Пн–Пт 07:00–18:00, Сб–Вс 10:00–16:00</span>
+    </div>
+  </div>
 
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, #fdfcfb 0%, #ffffff 15%, #ffffff 85%, #fdfcfb 100%);
-  color: #1b3d2f;
-}
+  <header>
+    <div class="nav">
+      <a href="about.html">О нас</a>
+      <a href="menu_ru.html">Меню</a>
+      <a href="contacts_ru.html">Контакты</a>
+      <a href="gallery_ru.html">Галерея</a>
+    </div>
+    <div class="lang-switch">
+      <a href="ettevottest.html">🇪🇪</a>
+    </div>
+  </header>
 
-.main-content {
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: #ffffff;
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
-}
+  <main>
+    <div class="info-text">
+      <h2>МЫ здесь, чтобы сделать вас счастливее!</h2>
+      <p>Если вы желаете сделать заказ или бронирование, пожалуйста, свяжитесь с нами. Мы вас ждем!</p>
+      <p>Кафе Söör Leiton прекрасно подходит для завтраков, обедов, семейных вечеринок и других мероприятий.</p>
+      <p><strong>Мы открыты:</strong><br>Пн–Пт 07:00 – 18:00<br>Сб–Вс 10:00 – 16:00<br>в праздники — по спец.заказам</p>
+      <h3>Наши контакты:</h3>
+      <p>📞 +372 54 77 0849 – Kohvik Leiton<br>📞 +372 54 52 0706 – Toitlustusjuht</p>
+      <p>✉️ <a href="mailto:toitlustus@kjvhk.ee">toitlustus@kjvhk.ee</a></p>
+      <h3>Мы находимся:</h3>
+      <p>
+        Ahtme mnt.16<br>
+        Ahtme linnosa (Ida-Viru keskhaigla kõrval)<br>
+        31025 Kohtla-Järve
+      </p>
+    </div>
+    <div class="contact-image">
+      <img src="img/Снимок экрана 2025-05-26 201701.png" alt="Кафе вход">
+    </div>
+  </main>
 
-.topbar {
-  background-color: #f9e4dc;
-  color: #3d0e17;
-}
+  <div style="max-width: 1200px; margin: 40px auto;">
+    <h3 style="text-align:center; font-family:'Playfair Display',serif; color:#3d0e17;">Kaart:</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2060.6622923497446!2d27.4075395!3d59.3294061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469465a136fd236d%3A0x6efc6642c745a230!2sAhtme%20mnt%2016%2C%20Ahtme%2C%2031025%20Ida-Viru%20maakond%2C%20Estonia!5e0!3m2!1sen!2see!4v1717440000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
 
-.nav a {
-  background-color: #fff5f5;
-  color: #7e1b34;
-}
-
-.nav a:hover {
-  background-color: #ffdede;
-}
-
-.nav {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.nav a {
-  color: white;
-  background-color: #a2283a;
-  padding: 6px 12px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.nav a:hover {
-  background-color: #c33b52;
-}
-
-.lang-switch {
-  display: flex;
-  gap: 10px;
-}
-
-.lang-switch a {
-  background: white;
-  color: #7e1b34;
-  padding: 4px 8px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  background: #f7f7f7;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  color: #3d0e17;
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-  font-family: 'Georgia', serif;
-  color: #3d0e17;
-}
-
-p {
-  font-family: 'Verdana', sans-serif;
-  font-size: 1.05em;
-  line-height: 1.8;
-  margin-bottom: 15px;
-}
-
-.gallery-img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin: 15px auto;
-  display: block;
-  border-radius: 10px;
-}
-
-.logo-img {
-  height: 19px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
-.social-icons {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.social-icons a img {
-  height: 28px;
-  vertical-align: middle;
-  margin: 0 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #f0f4f1;
-}
-
-.carousel-container {
-  max-width: 800px;
-  margin: 40px auto;
-  overflow: hidden;
-  border-radius: 12px;
-  position: relative;
-  background: #ffffff;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  height: 500px;
-}
-
-.carousel-slide {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  flex-shrink: 0;
-  border-radius: 10px;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-@media (max-width: 768px) {
-  body {
-    background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%);
-  }
-}
+  <footer>
+    <p>© 2025 Söör Leiton</p>
+  </footer>
+</body>
+</html>
