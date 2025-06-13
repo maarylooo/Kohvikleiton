@@ -9,37 +9,26 @@
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
-      background: #fdfbf6;
-      color: #2f3e30;
+      background: linear-gradient(to right, #f5f3f0 0%, #ffffff 15%, #ffffff 85%, #f5f3f0 100%);
+      color: #1b3d2f;
     }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-    }
+
     .topbar {
       background-color: #e0cfc2;
-      color: #3d0e17;
       padding: 10px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-    .topbar .left-link a {
-      color: #3d0e17;
-      text-decoration: none;
       font-weight: bold;
-      display: flex;
-      align-items: center;
     }
-    .logo-img {
-      height: 26px;
-      margin-right: 8px;
+    .topbar a {
+      text-decoration: none;
+      color: #3d0e17;
     }
-    .right-info {
-      display: flex;
-      gap: 20px;
-    }
+
     header {
       background: #7e1b34;
+      color: white;
       padding: 10px 20px;
       display: flex;
       justify-content: space-between;
@@ -52,10 +41,9 @@
     .nav a {
       color: white;
       text-decoration: none;
-      background: #a2283a;
       padding: 6px 12px;
-      border-radius: 6px;
-      font-weight: bold;
+      background-color: #a2283a;
+      border-radius: 8px;
     }
     .lang-switch a {
       background: white;
@@ -65,41 +53,69 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 30px 20px;
-      display: flex;
-      gap: 40px;
-      align-items: flex-start;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
     }
-    .contact-left {
-      flex: 1;
+
+    /* === Галерея меню === */
+    .menu-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
     }
-    .contact-right {
-      flex: 1;
-    }
-    .contact-right img {
+    .menu-gallery img {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      transition: transform 0.3s;
     }
-    a {
-      color: #3b5d3c;
+    .menu-gallery img:hover {
+      transform: scale(1.04);
     }
+
+    h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #1b3d2f;
+      text-align: center;
+      margin-top: 40px;
+    }
+    p {
+      font-family: 'Verdana', sans-serif;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .social-icons a img {
+      height: 28px;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+
     footer {
       text-align: center;
       padding: 15px;
       background: #eee;
+      color: #333;
+      margin-top: 40px;
     }
-  </style>
   </style>
 </head>
 <body>
+
   <div class="topbar">
     <div class="left-link">
       <a href="https://soorleiton.ee/" target="_blank">
-        <img src="img/logo_bulldog.png" alt="Logo" class="logo-img" />
+        <img src="img/logo_bulldog.png" alt="Logo" style="height:24px; vertical-align:middle; margin-right:8px;">
         Kohvik Söör Leiton
       </a>
     </div>
