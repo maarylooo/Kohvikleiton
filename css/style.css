@@ -1,6 +1,7 @@
 :root {
     --text-color: #610516;
-    --background: #fff6de;
+    --background: #faede1; /* Фон по бокам */
+    --panel-color: #f7f1e6; /* Панелька, которая текст обворачивает */
 }
 
 /* Общий фон страницы */
@@ -14,10 +15,10 @@ body {
 .main-content {
   max-width: 900px;
   margin: 40px auto;
-  background-color: var(--background) 
   padding: 40px 30px;
   border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+  background-color: var(--panel-color);
 }
 
 .main-content > * {
@@ -114,7 +115,7 @@ header {
 /* Контент страницы */
 main {
   margin: 0 auto;
-  background: var(--background); /* Легкий фоновый цвет для контента */
+  background-color: var(--background); 
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
