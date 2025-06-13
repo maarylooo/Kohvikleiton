@@ -21,7 +21,6 @@
       align-items: center;
       font-weight: bold;
     }
-
     .topbar a {
       text-decoration: none;
       color: #3d0e17;
@@ -35,12 +34,10 @@
       justify-content: space-between;
       align-items: center;
     }
-
     .nav {
       display: flex;
       gap: 20px;
     }
-
     .nav a {
       color: white;
       text-decoration: none;
@@ -48,7 +45,6 @@
       background-color: #a2283a;
       border-radius: 8px;
     }
-
     .lang-switch a {
       background: white;
       color: #7e1b34;
@@ -58,50 +54,51 @@
       font-weight: bold;
     }
 
-    .main-content {
+    main {
       max-width: 900px;
       margin: 30px auto;
-      background-color: #e8f5ec;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 20px;
     }
 
-    .main-content h2 {
-      text-align: center;
+    /* === Галерея меню === */
+    .menu-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .menu-gallery img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      transition: transform 0.3s;
+    }
+    .menu-gallery img:hover {
+      transform: scale(1.04);
+    }
+
+    h2, h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 28px;
       color: #1b3d2f;
-      text-transform: uppercase;
-    }
-
-    .main-content em {
-      display: block;
       text-align: center;
-      font-size: 18px;
-      color: #2d5d43;
-      margin-bottom: 20px;
-      font-style: italic;
-    }
-
-    .main-content p {
-      font-family: 'Verdana', sans-serif;
-      font-size: 1.05em;
-      color: #1b3d2f;
-      line-height: 1.8;
-    }
-
-    .main-content .signature {
-      text-align: right;
-      font-style: italic;
       margin-top: 40px;
     }
+    p {
+      font-family: 'Verdana', sans-serif;
+      line-height: 1.6;
+      text-align: center;
+    }
 
-    .main-content img {
-      display: block;
-      margin: 0 auto 25px auto;
-      max-width: 100%;
-      border-radius: 12px;
+    .social-icons {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .social-icons a img {
+      height: 28px;
+      vertical-align: middle;
+      margin: 0 10px;
     }
 
     footer {
@@ -109,25 +106,25 @@
       padding: 15px;
       background: #eee;
       color: #333;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
 
-
-     <div class="topbar">
+  <div class="topbar">
     <div class="left-link">
-  <a href="https://soorleiton.ee/" target="_blank">
-    <img src="img/logo_bulldog.png" alt="Logo" class="logo-img" />
-    Kohvik Söör Leiton
-  </a>
-</div>
+      <a href="https://soorleiton.ee/" target="_blank">
+        <img src="img/logo_bulldog.png" alt="Logo" style="height:24px; vertical-align:middle; margin-right:8px;">
+        Kohvik Söör Leiton
+      </a>
+    </div>
     <div class="right-info">
       <span>📞 +372 54 77 0849</span>
       <span>🕒 Пн–Пт 07:00–18:00, Сб–Вс 10:00–16:00</span>
-   
+    </div>
   </div>
 
- </div>    
   <header>
     <div class="nav">
       <a href="about.html">О нас</a>
@@ -139,35 +136,52 @@
   </header>
 
   <main>
-    <h2>У ЖИЗНИ ШИРОКИЙ СПЕКТР ВКУСОВ</h2>
-    <p>Концепцией кафе Söör Leiton является классическое кафе.</p>
-    <p>Быстрое и достойное меню кафе доступно каждый день. У нас только вкусная, здоровая еда и наисвежайшие пирожки по очень приемлемым ценам. При желании еду можно купить с собой!</p>
-    <p>Напоминаем, что мы открыты и готовы к любым вызовам, по вашим особым запросам. Не стесняйтесь, обращайтесь по e-mail <a href="mailto:toitlustus@kjvhk.ee">toitlustus@kjvhk.ee</a> 
-      или по телефону 📞 +372 54 77 0849, 📞 +372 54 52 0706.</p>
+    <!-- Завтраки -->
+    <h2>МЕНЮ ЗАВТРАКА</h2>
+    <p>Завтрак — самый важный приём пищи, заряжает энергией на весь день.</p>
+    <div class="menu-gallery">
+      <img src="img/breakfast1.webp" alt="Завтрак 1">
+      <img src="img/breakfast2.webp" alt="Завтрак 2">
+      <img src="img/breakfast3.jpg"  alt="Завтрак 3">
+      <img src="img/breakfast4.jpg"  alt="Завтрак 4">
+      <img src="img/breakfast5.jpg"  alt="Завтрак 5">
+      <img src="img/breakfast6.webp" alt="Завтрак 6">
+    </div>
 
-    <h3>МЕНЮ ЗАВТРАКА</h3>
-    <p>Завтрак – самый важный приём пищи, который сохраняет здоровье и заряжает необходимой энергией на весь день.</p>
-    <img src="img/photo_5287658466195927879_y.jpg" alt="Завтрак" class="gallery-img" />
+    <!-- Обеды -->
+    <h2>МЕНЮ ОБЕДА</h2>
+    <p>Обед — поддерживает хорошее самочувствие и дарит силы.</p>
+    <div class="menu-gallery">
+      <img src="img/lunch1.jpg" alt="Обед 1">
+      <img src="img/lunch2.jpg" alt="Обед 2">
+      <img src="img/lunch3.jpg" alt="Обед 3">
+      <img src="img/lunch4.jpg" alt="Обед 4">
+      <img src="img/lunch5.jpg" alt="Обед 5">
+      <img src="img/lunch6.jpg" alt="Обед 6">
+    </div>
 
-    <h3>МЕНЮ ОБЕДА</h3>
-    <p>Обед – лучший помощник сохранить хорошее самочувствие и энергию.</p>
-    <img src="img/photo_5287658466195927863_y.jpg" alt="Обед" class="gallery-img" />
+    <!-- Десерты -->
+    <h2>ДЕСЕРТ</h2>
+    <p>Десерт — это эмоции, тающие во рту.</p>
+    <div class="menu-gallery">
+      <img src="img/dessert1.jpg" alt="Десерт 1">
+      <img src="img/dessert2.jpg" alt="Десерт 2">
+      <img src="img/dessert3.jpg" alt="Десерт 3">
+      <img src="img/dessert4.jpg" alt="Десерт 4">
+      <img src="img/dessert5.jpg" alt="Десерт 5">
+      <img src="img/dessert6.jpg" alt="Десерт 6">
+    </div>
 
-    <h3>ДЕСЕРТ</h3>
-    <p>Это не просто еда – это эмоция, нежно тающая во рту, превращающая обычный день в праздник.</p>
-    <img src="img/photo_5285456608261961440_y.jpg" alt="Десерт" class="gallery-img" />
-<h3>БАНКЕТНОЕ МЕНЮ</h3>
+    <h2>БАНКЕТНОЕ МЕНЮ</h2>
     <p>Это особое меню «на заказ» для праздника, торжества или события.</p>
-    <img src="img/photo_5287658466195927860_y.jpg" alt="Банкет" class="gallery-img" />
 
     <div class="social-icons">
-      Ознакомьтесь с нашим сегодняшним меню  
+      Ознакомьтесь с нашим меню в соцсетях:
       <a href="https://www.instagram.com/kohvikleiton" target="_blank">
-        <img src="img/instagram_icon.png" alt="Instagram" />
+        <img src="img/instagram_icon.png" alt="Instagram">
       </a>
-      
       <a href="https://www.facebook.com/share/1BT9iPECfs/" target="_blank">
-        <img src="img/facebook_icon.png" alt="Facebook" />
+        <img src="img/facebook_icon.png" alt="Facebook">
       </a>
     </div>
   </main>
