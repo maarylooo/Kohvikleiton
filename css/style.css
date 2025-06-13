@@ -1,1 +1,162 @@
+/* ==========================================================================
+   Основные стили для сайта «Söör Leiton»
+   ========================================================================== */
+
+/* 1) Бордово-вишнёвая рамка по бокам и светлая полоса в центре */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(
+    to right,
+    #5a1225 0%,    /* тёмная вишня слева */
+    #7e1b34 25%,   /* основная вишнёвая */
+    #7e1b34 75%,   /* основная вишнёвая */
+    #5a1225 100%   /* тёмная вишня справа */
+  );
+  color: #f5f3f0;  /* светлый текст по умолчанию */
+}
+
+/* 2) Верхняя тонкая полоса (topbar) — насыщенный тёмно-зелёный градиент */
+.topbar {
+  background: linear-gradient(
+    to right,
+    #19412f 0%,
+    #1b533f 50%,
+    #19412f 100%
+  );
+  color: #f5f3f0;
+  padding: 8px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+.topbar .left-link a {
+  color: #f5f3f0;
+  text-decoration: none;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.topbar .left-link img.logo-img {
+  height: 24px;
+}
+.topbar .right-info span {
+  margin-left: 20px;
+  font-size: 0.95em;
+}
+
+/* 3) Шапка навигации — глубокий зелёный с плавным переходом */
+header {
+  background: linear-gradient(
+    to right,
+    #1b533f 0%,
+    #2a6f59 100%
+  );
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  gap: 16px;
+}
+.nav a {
+  background-color: #2a6f59;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.nav a:hover,
+.nav a:focus {
+  background-color: #1b533f;
+}
+.lang-switch a {
+  background: #f5f3f0;
+  color: #1b3d2f;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 4) Центральный контент — белая карточка, чтобы текст был читаем */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #1b3d2f;
+  text-align: center;
+  margin-top: 1.2em;
+}
+p {
+  font-family: 'Verdana', sans-serif;
+  color: #2f3e30;
+  line-height: 1.8;
+  margin: 1em 0;
+  text-align: center;
+}
+
+/* 5) Галерея меню — сетка одинаковых фото */
+.menu-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 1.5em;
+}
+.menu-gallery img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: transform 0.3s;
+}
+.menu-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* 6) Социальные иконки */
+.social-icons {
+  text-align: center;
+  margin: 2em 0;
+}
+.social-icons a img {
+  height: 30px;
+  margin: 0 12px;
+  vertical-align: middle;
+}
+
+/* 7) Футер */
+footer {
+  background-color: #3d0e17;  /* тёмная вишня */
+  color: #f5f3f0;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .topbar, header, main, footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
