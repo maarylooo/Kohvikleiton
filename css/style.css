@@ -1,161 +1,261 @@
-/* ==========================================================================
-   Основные стили для сайта «Söör Leiton»
-   ========================================================================== */
 
-/* 1) Бордово-вишнёвая рамка по бокам и светлая полоса в центре */
+
+}
+/* Общий фон страницы */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(
-    to right,
-    #5a1225 0%,    /* тёмная вишня слева */
-    #7e1b34 25%,   /* основная вишнёвая */
-    #7e1b34 75%,   /* основная вишнёвая */
-    #5a1225 100%   /* тёмная вишня справа */
-  );
-  color: #f5f3f0;  /* светлый текст по умолчанию */
+  background-color: #f5f3f0; /* основной бежевый фон */
 }
 
-/* 2) Верхняя тонкая полоса (topbar) — насыщенный тёмно-зелёный градиент */
+.main-content {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff; /* белая внутренняя карточка */
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+}
+
+/* Шапка сайта */
 .topbar {
-  background: linear-gradient(
-    to right,
-    #19412f 0%,
-    #1b533f 50%,
-    #19412f 100%
-  );
-  color: #f5f3f0;
-  padding: 8px 30px;
+  background-color: #d0f0d0; /* Мягкий зеленый */
+  color: #3d0e17; /* Темно-зеленый текст */
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 600;
 }
+
 .topbar .left-link a {
-  color: #f5f3f0;
+  color: #3d0e17;
+  font-size: 17px;
   text-decoration: none;
-  font-size: 1em;
+  font-weight: bold;
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.topbar .left-link img.logo-img {
-  height: 24px;
-}
-.topbar .right-info span {
-  margin-left: 20px;
-  font-size: 0.95em;
+
+.topbar .right-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-/* 3) Шапка навигации — глубокий зелёный с плавным переходом */
+/* Шапка сайта */
 header {
-  background: linear-gradient(
-    to right,
-    #1b533f 0%,
-    #2a6f59 100%
-  );
+  background: #3d0e17; /* Вишневый цвет */
   color: white;
-  padding: 12px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav {
   display: flex;
-  gap: 16px;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1;
 }
+
 .nav a {
-  background-color: #2a6f59;
-  color: #ffffff;
+  color: white;
+  background-color: #a2283a; /* Тот же вишневый */
+  padding: 6px 12px;
+  border-radius: 8px;
   text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 6px;
   font-weight: bold;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s;
 }
-.nav a:hover,
-.nav a:focus {
-  background-color: #1b533f;
+
+.nav a:hover {
+  background-color: #c33b52; /* Ярче */
 }
+
+.lang-switch {
+  display: flex;
+  gap: 10px;
+}
+
 .lang-switch a {
-  background: #f5f3f0;
-  color: #1b3d2f;
-  padding: 6px 10px;
-  border-radius: 4px;
+  background: white;
+  color: #7e1b34;
+  padding: 4px 8px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* 4) Центральный контент — белая карточка, чтобы текст был читаем */
+/* Контент страницы */
 main {
   max-width: 900px;
-  margin: 40px auto;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  background: #f7f7f7; /* Легкий фоновый цвет для контента */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-h1, h2, h3 {
+
+h1, h2 {
   font-family: 'Playfair Display', serif;
-  color: #1b3d2f;
-  text-align: center;
-  margin-top: 1.2em;
-}
-p {
-  font-family: 'Verdana', sans-serif;
-  color: #2f3e30;
-  line-height: 1.8;
-  margin: 1em 0;
+  color: #3d0e17; /* Темно-зеленый текст */
   text-align: center;
 }
 
-/* 5) Галерея меню — сетка одинаковых фото */
+h3 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #3d0e17;
+}
+
+p {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.05em;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Картинки галереи */
+.gallery-img {
+  width: 100%;
+  max-width: 400px; /* Увеличиваем ширину */
+  height: auto;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
+}
+.logo-img {
+  height: 19px;  /* было 34px — теперь меньше */
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Социальные иконки */
+.social-icons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-icons a img {
+  height: 28px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f0f4f1; /* Тот же мягкий фон, что и на теле страницы */
+}
+.carousel-container {
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  height: 500px; /* можешь изменить под свой дизайн */
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit:  contain;; /* Показывает фото без искажений */
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+/* Сетка для галереи блюд */
+/* === Галереи меню === */
 .menu-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-top: 1.5em;
+  gap: 16px;               /* расстояние между фото */
+  margin: 20px 0;
 }
+
 .menu-gallery img {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
+  height: 140px;           /* фиксированная высота */
+  object-fit: cover;       /* обрезает фото так, чтобы заполнить блок */
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.12);
   transition: transform 0.3s;
 }
+
+.menu-gallery img:hover {
+  transform: scale(1.04);
+}
+}
+
+/* Оформление самих картинок */
+.menu-gallery img {
+  width: 100%;
+  height: 150px;        /* фиксированная высота */
+  object-fit: cover;    /* обрезаем, чтобы заполнить контейнер */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: transform 0.3s;
+}
+
 .menu-gallery img:hover {
   transform: scale(1.05);
 }
 
-/* 6) Социальные иконки */
-.social-icons {
-  text-align: center;
-  margin: 2em 0;
-}
-.social-icons a img {
-  height: 30px;
-  margin: 0 12px;
-  vertical-align: middle;
+
 }
 
-/* 7) Футер */
-footer {
-  background-color: #3d0e17;  /* тёмная вишня */
-  color: #f5f3f0;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-}
-
-/* Адаптив для мобильных */
+.prev { left: 10px; }
+.next { right: 10px; }
+/* Мобильный фон по бокам */
 @media (max-width: 768px) {
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .topbar, header, main, footer {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+  body {
+    background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%); /* Мобильный фон */
+    /* --- Бордовая боковая «рамка» и светлый центр --- */
+body {
+  background: linear-gradient(
+    to right,
+    #7e1b34 0%,      /* бордовая слева */
+    #7e1b34 10%,     /* бордовая до 10% */
+    #ffffff 10%,     /* белый (или светлый) 10–90% */
+    #ffffff 90%,     
+    #7e1b34 90%,     /* бордовая с 90% */
+    #7e1b34 100%
+  );
 }
+
+/* --- Тёмно-зелёная шапка навигации --- */
+header {
+  background: #1b3d2f;  /* тёмно-зелёный */
+}
+
+/* --- Кнопки навигации в более контрастном темно-зеленом --- */
+.nav a {
+  background-color: #14502f;  /* чуть светлее/темнее - на ваш вкус */
+  color: #ffffff;
+}
+.nav a:hover {
+  background-color: #0f3b23;
+}
+
+/* --- Яркие «активные» ссылки --- */
+.nav a.active,
+.nav a:focus {
+  background-color: #0a2a17;
+}
+
+/* --- Подпись логотипа сделаем прозрачной, чтобы не мешала --- */
+.topbar {
+  background-color: rgba(224, 207, 194, 0.9); /* чуть прозрачнее бежевого *
