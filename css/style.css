@@ -90,6 +90,15 @@ header {
   font-weight: bold;
 }
 
+.topbar {
+      background-color: #e8f5ec;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+}
+
 /* Контент страницы */
 main {
   max-width: 900px;
@@ -198,7 +207,6 @@ footer {
 .menu-gallery img:hover {
   transform: scale(1.04);
 }
-}
 
 /* Оформление самих картинок */
 .menu-gallery img {
@@ -215,25 +223,14 @@ footer {
 }
 
 
-}
 
 .prev { left: 10px; }
 .next { right: 10px; }
-/* Мобильный фон по бокам */
-@media (max-width: 768px) {
   body {
     background: linear-gradient(to right, #f0f4f1 0%, #ffffff 100%); /* Мобильный фон */
     /* --- Бордовая боковая «рамка» и светлый центр --- */
 body {
-  background: linear-gradient(
-    to right,
-    #7e1b34 0%,      /* бордовая слева */
-    #7e1b34 10%,     /* бордовая до 10% */
-    #ffffff 10%,     /* белый (или светлый) 10–90% */
-    #ffffff 90%,     
-    #7e1b34 90%,     /* бордовая с 90% */
-    #7e1b34 100%
-  );
+  background: #7e1b34;
 }
 
 /* --- Тёмно-зелёная шапка навигации --- */
@@ -254,7 +251,6 @@ header {
 .nav a.active,
 .nav a:focus {
   background-color: #0a2a17;
-}
 
 /* --- Подпись логотипа сделаем прозрачной, чтобы не мешала --- */
 .topbar {
