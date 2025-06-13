@@ -1,8 +1,15 @@
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, #e0cfc2 0%, #ffffff 10%, #ffffff 90%, #e0cfc2 100%);
-  color: #2f3e30;
+  background: linear-gradient(
+    to right,
+    #7e1b34 0%,   /* бордовая слева */
+    #7e1b34 10%,  /* бордовая до 10% */
+    #f5f3f0 10%,  /* бежевый с 10% до 90% */
+    #f5f3f0 90%,
+    #7e1b34 90%,  /* бордовая справа */
+    #7e1b34 100%
+  );
+  color: #2f3e30; /* тёмно-зелёный текст */
+}
 
 }
 /* Общий фон страницы */
@@ -13,24 +20,14 @@ body {
 }
 
 .main-content {
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: #ffffff; /* белая внутренняя карточка */
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+  background-color: #ffffff
 }
 
 /* Шапка сайта */
 .topbar {
-  background-color: #d0f0d0; /* Мягкий зеленый */
-  color: #3d0e17; /* Темно-зеленый текст */
-  padding: 10px 30px;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #d5e8d4; /* мягкий, чуть зелёный бежевый */
+  color: #3d0e17;            /* тёмно-зелёный текст */
+}
 }
 
 .topbar .left-link a {
@@ -51,19 +48,16 @@ body {
 
 /* Шапка сайта */
 header {
-  background: #7e1b34; /* Вишневый цвет */
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ header {
+  background-color: #1b3d2f;
 }
 
-.nav {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-grow: 1;
+.nav a {
+  background-color: #14502f;  /* чуть светлее тёмно-зеленый */
+  color: #ffffff;
+}
+.nav a:hover {
+  background-color: #0f3b23;  /* более насыщенный при наведении */
 }
 
 .nav a {
@@ -86,12 +80,9 @@ header {
 }
 
 .lang-switch a {
-  background: white;
-  color: #7e1b34;
-  padding: 4px 8px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+  background-color: #ffffff;
+  color: #1b3d2f;
+}
 }
 
 /* Контент страницы */
