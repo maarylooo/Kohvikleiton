@@ -1,0 +1,6 @@
+# Серверные конфигурационные файлы
+.htaccess
+robots.txt
+*.log
+cronjobs/
+old_site/
